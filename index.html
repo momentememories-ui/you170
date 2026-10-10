@@ -205,7 +205,7 @@
       50% { opacity: 1; }
     }
 
-    /* ปรับพื้นหลังให้ขยายเต็มจอพอดีแบบ 100% 100% */
+    /* ขยายพื้นหลังให้เต็มจอ และซูมเพิ่มอีก 20% เป็น 120% 120% */
     .polaroid-overlay {
       position: absolute;
       top: 0;
@@ -213,7 +213,7 @@
       width: 100%;
       height: 100%;
       background-image: url('พื้นหลัง.png');
-      background-size: 100% 100%;
+      background-size: 120% 120%;
       background-position: center;
       background-repeat: no-repeat;
       z-index: 300;
@@ -834,11 +834,11 @@
       }, 120);
     }
 
-    /* จัดตำแหน่งภาพทั้ง 5 รูปใหม่ ให้กระจายตัวสมดุลตรงกลางหน้าจอเท่ากันทั้งซ้ายและขวา */
+    /* จัดตำแหน่งภาพทั้ง 5 รูปแบบสมดุลกลางหน้าจอ */
     const polaroidData = [
       { img: 'photo1.jpg', text: 'รักเฟรมมากๆนะ<br>อยากดูแลเฟรมให้ดี<br>เราชัดเจนกับเฟรมมากๆนะ', top: '10%', left: '12%', rotate: '-7deg', duration: '1.8s', delay: '0s' },
       { img: 'photo2.jpg', text: 'รักเฟรมมากๆนะ<br>อยากดูแลเฟรมให้ดี<br>เราชัดเจนกับเฟรมมากๆนะ', top: '10%', left: '55%', rotate: '6deg', duration: '2.4s', delay: '0.4s' },
-      { img: 'photo3.png', text: 'รักเฟรมมากๆนะ<br>อยากดูแลเฟรมให้ดี<br>เราชัดเจนกับเฟรมมากๆนะ', top: '37%', left: '34%', rotate: '-3deg', duration: '1.6s', delay: '0.2s' },
+      { img: 'photo3.jpg', text: 'รักเฟรมมากๆนะ<br>อยากดูแลเฟรมให้ดี<br>เราชัดเจนกับเฟรมมากๆนะ', top: '37%', left: '34%', rotate: '-3deg', duration: '1.6s', delay: '0.2s' },
       { img: 'photo4.jpg', text: 'รักเฟรมมากๆนะ<br>อยากดูแลเฟรมให้ดี<br>เราชัดเจนกับเฟรมมากๆนะ', top: '60%', left: '14%', rotate: '5deg', duration: '2.2s', delay: '0.6s' },
       { img: 'photo5.jpg', text: 'รักเฟรมมากๆนะ<br>อยากดูแลเฟรมให้ดี<br>เราชัดเจนกับเฟรมมากๆนะ', top: '60%', left: '53%', rotate: '-6deg', duration: '2.0s', delay: '0.3s' }
     ];
